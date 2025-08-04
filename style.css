@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #15d776;
+  color: #333;
+}
+
+
+header {
+  background-color: #e0f2e9;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #17c520;
+}
+
+nav button {
+  margin: 0.25rem;
+  padding: 0.5rem 1rem;
+  background-color: #09db13;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #15e322;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.product {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product h3 {
+  margin: 0.5rem 0;
+}
+
+.add-to-cart {
+  background-color: #19dc23;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background-color: #15ca1e;
+}
+
+.cart-icon {
+  cursor: pointer;
+  position: relative;
+}
+
+#cart-count {
+  background-color: #3669f4;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.8rem;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.cart-modal {
+  position: fixed;
+  right: 1rem;
+  top: 5rem;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+.clear-btn {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  background-color: #b71c1c;
+}
+.order-link {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 14px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.order-link:hover {
+  background-color: #218838;
+}
